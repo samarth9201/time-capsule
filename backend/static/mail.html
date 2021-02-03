@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email</title>
+    <link rel="stylesheet" href="mail.css">
+    <style>
+        h1 {
+            font-size: 6vh;
+        }
+
+        h3 {
+            font-size: 3vh;
+        }
+
+        .contents {
+            justify-content: center;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="cid:logo">
+    </div>
+    <div class="contents">
+        <h1>Hello, {{firstname}}</h1>
+        <h3>
+            You can now open the time-capsule.<br>
+            Your Contract Address is : {{contractaddress}}
+        </h3>
+    </div>
+</body>
+
+</html>

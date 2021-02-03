@@ -1,0 +1,23 @@
+.container{
+    text-align: center;
+    margin-top: 5vh;
+
+    button{
+        padding: 25px;
+        outline: none;
+        border-radius: 20px;
+        margin: 1rem;
+        font-size: xx-large;
+        font-weight: 600;
+        @include transition-ease;
+
+        &.NotVisible{
+            visibility:hidden;
+            display: none;
+        }
+    }
+}
+
+.title{
+    text-align: center;
+}
