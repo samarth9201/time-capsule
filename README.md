@@ -15,7 +15,7 @@
   ```
   > git clone https://github.com/samarth9201/music-stream-decentralized.git cd music-stream-decentralized
   ```
-2. Install the dependency.
+2. Install the dependency. In client directory,
 
     a. Using yarn :
     ```
