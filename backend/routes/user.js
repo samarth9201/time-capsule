@@ -19,7 +19,7 @@ router.route('/add').post(async (req, res) => {
     catch (error) {
         res.status(409).json({
             error: true,
-            message: "Email already used"
+            message: error
         })
     }
 })
