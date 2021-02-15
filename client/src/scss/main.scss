@@ -3,6 +3,7 @@
 @import "./container";
 @import "./form";
 @import "./home";
+@import "./opencapsule";
 
 #root {
     height: 100vh;
@@ -20,5 +21,9 @@ code {
 }
 
 .text{
+    text-align: center;
+}
+
+.loading {
     text-align: center;
 }

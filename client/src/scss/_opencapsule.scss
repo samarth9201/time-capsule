@@ -1,0 +1,43 @@
+.OpenCapsule {
+    text-align: center;
+    display: block;
+
+    .btn {
+        background-color: #6a7f10;
+        border: none;
+        font-size: 1.625rem;
+        padding-bottom: 0.8rem;
+        padding-top: 0.8rem;
+        border-radius: 0;
+        font-variant-caps: all-petite-caps;
+        text-decoration: none;
+        font-weight: 600;
+
+        &:hover {
+            text-decoration: underline;
+            background-color: #44520a;
+        }
+    }
+
+    button {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .NotVisible {
+        display: none;
+    }
+
+    .col {
+        text-align: left;
+        margin-bottom: 1.2rem;
+    }
+
+    label {
+        font-family: "Oswald", sans-serif;
+        font-size: 1.125rem;
+        letter-spacing: 0.0005rem;
+        margin-bottom: 0.9375rem;
+        text-transform: uppercase;
+    }
+}

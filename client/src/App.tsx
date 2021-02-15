@@ -4,6 +4,8 @@ import Web3 from 'web3'
 import connectToWallet from './loadWeb3'
 import HomePage from './HomePage'
 import logo from "./portland_state_university.svg"
+import { Button } from 'react-bootstrap'
+import OpenCapsule from './OpenCapsule'
 
 const Factory = require('./contracts/Factory.json')
 
@@ -20,6 +22,19 @@ const App = () => {
   const [factory, setFactory] = React.useState<any>(null)
   const [web3, setWeb3] = React.useState<any>(null)
   const [Body, setBody] = React.useState<any>(null)
+  const [btnText, setBtnText] = React.useState("Open Capsule")
+
+  const openCapsule = () =>{
+    if(btnText === "Open Capsule"){
+      setBody(<OpenCapsule web3={web3} factory={factory} setBody={setBody}></OpenCapsule>)
+      setBtnText("Make Submission")
+    }
+
+    else{
+      setBody(<HomePage web3={web3} factory={factory} setBody={setBody}/>)
+      setBtnText("Open Capsule")
+    }
+  }
 
   const getWeb3 = async () => {
     const web3instance = await connectToWallet()
@@ -52,6 +67,7 @@ const App = () => {
           <img src={logo} alt="Portland State University" />
         </a>
         <div className="address">
+          <Button className={clsx({"NotVisible": address === ""})} onClick={openCapsule}>{btnText}</Button>
           {address}
         </div>
       </div>

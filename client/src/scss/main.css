@@ -32,6 +32,28 @@
   right: 0;
 }
 
+.navbar .NotVisible {
+  display: none;
+}
+
+.navbar .btn {
+  background-color: #6a7f10;
+  border: none;
+  font-size: 1.2rem;
+  padding-bottom: 0.3rem;
+  padding-top: 0.3rem;
+  margin-right: 2rem;
+  border-radius: 0;
+  font-variant-caps: all-petite-caps;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.navbar .btn:hover {
+  text-decoration: underline;
+  background-color: #44520a;
+}
+
 .container {
   text-align: center;
   margin-top: 5vh;
@@ -114,6 +136,50 @@
   text-transform: uppercase;
 }
 
+.OpenCapsule {
+  text-align: center;
+  display: block;
+}
+
+.OpenCapsule .btn {
+  background-color: #6a7f10;
+  border: none;
+  font-size: 1.625rem;
+  padding-bottom: 0.8rem;
+  padding-top: 0.8rem;
+  border-radius: 0;
+  font-variant-caps: all-petite-caps;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.OpenCapsule .btn:hover {
+  text-decoration: underline;
+  background-color: #44520a;
+}
+
+.OpenCapsule button {
+  padding: 20px;
+  margin: 20px;
+}
+
+.OpenCapsule .NotVisible {
+  display: none;
+}
+
+.OpenCapsule .col {
+  text-align: left;
+  margin-bottom: 1.2rem;
+}
+
+.OpenCapsule label {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.125rem;
+  letter-spacing: 0.0005rem;
+  margin-bottom: 0.9375rem;
+  text-transform: uppercase;
+}
+
 #root {
   height: 100vh;
 }
@@ -129,6 +195,10 @@ code {
 }
 
 .text {
+  text-align: center;
+}
+
+.loading {
   text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
