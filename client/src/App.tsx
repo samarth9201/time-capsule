@@ -2,7 +2,7 @@ import React from 'react'
 import clsx from 'clsx'
 import Web3 from 'web3'
 import connectToWallet from './loadWeb3'
-import HomePage from './HomePage'
+import HomePage from './HomePagePowergate'
 import logo from "./portland_state_university.svg"
 import { Button } from 'react-bootstrap'
 import OpenCapsule from './OpenCapsule'
